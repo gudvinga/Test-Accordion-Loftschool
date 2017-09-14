@@ -1,0 +1,27 @@
+#accordion {
+	width: 500px;
+	margin: 0 auto; 
+}
+
+.accordion__title {
+	background-color: #eee;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: margin 1.5s;
+}
+
+.accordion__title_active + .accordion__content {
+	display: block;
+	opacity: 1;
+	height: 200px;
+}
+.accordion__content {
+	padding: 10px;
+	box-sizing: border-box;
+	opacity: 0;
+	height: 0px;
+	overflow: hidden;
+	transition: 1s;
+}
